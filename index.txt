@@ -1,0 +1,44 @@
+Подключайся и играй на наших серверах!
+{#, [img/icon_social_vk.png], Группа Minecraft-km7 в Вконтакті}
+{#, [img/icon_social_fb.png], Группа Minecraft-km7 в Фейсбук}
+{#, [img/icon_language.png], Change language}
+
+{ /, [img/logo.png, Логотип Minecraft] }
+
+Админ: {tel:+380683332210, +38(068) 333-22-10} {tel:+380997505050, +38(099) 750-50-50}
+
+По донату: {tel:+380673322180, 067-33-22-180}
+
+Скайп: {#, [img/skype.png], skype minecraft-km7 }
+
+Выбрать серверах
+Случайный
+
+- {\, Главная}
+- {#, Об игре}
+- {#, Список серверов}
+- {#, Наша команда}
+- {#, Донат}
+
+
+Мир Minecraft
+Industrial craft
+OptiFine
+Forge
+TooManyItems
+RailCraft
+
+Новости
+-------
+- {#, }
+- {#, }
+- {#, }
+
+
+
+
+
+
+
+
+
