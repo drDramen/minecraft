@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="header__content">
-			<div class="container">
+			<div class="header__content-flex container">
 				<div class="header__content-logo">
 					<a href="#"><img src="img/logo.png" alt="Minecraft"></a>
 				</div>
@@ -57,22 +57,20 @@
 			<div class="container">
 				<menu class="header__menu">-->
 		<nav class="header__nav">
-			<div class="container">
-				<menu class="header__menu">
-					<li class="header__menu-item"><a href="#">Об игре</a></li>
-					<li class="header__menu-item"><a href="#">Список серверов</a></li>
-					<li class="header__menu-item header__menu-item--active"><a href="#">Главная</a></li>
-					<li class="header__menu-item"><a href="#">Наша команда</a></li>
-					<li class="header__menu-item"><a href="#">Донат</a></li>
-				</menu>
-			</div>
+			<menu class="header__menu container">
+				<li class="header__menu-item header__menu-item--active"><a href="#">Главная</a></li>
+				<li class="header__menu-item"><a href="#">Об игре</a></li>
+				<li class="header__menu-item"><a href="#">Список серверов</a></li>
+				<li class="header__menu-item"><a href="#">Наша команда</a></li>
+				<li class="header__menu-item"><a href="#">Донат</a></li>
+			</menu>
 		</nav>
 
 	</header>
 
-	<div class="body">
-		<div class="container">
 
+	<div class="container">
+		<div class="body">
 			<aside class="sidebar">
 				<ul class="sidebar__list">
 					<li class="sidebar__list sidebar__list--active"><a href="#">Мир Minecraft</a>
@@ -117,18 +115,25 @@
 						</h2>
 						<ul class="news__items">
 							<li class="news-item">
-								<p class="news-item-time"><time datetime="2016-08-04">2016-08-04</time></p>
-								<p class="news-item-text">Страж подводной крепости довольно сильный противник для начинащего ирока</p>
+								<div class="news-item-header">
+									<p class="news-item-time"><time datetime="2016-08-04">2016-08-04</time></p>
+									<p class="news-item-text">Страж подводной крепости довольно сильный противник для начинащего ирока</p>
+								</div>
 								<img class="news-item-img" src="img/news_screenshot-1.jpg" alt="Страж подводной крепости">
 							</li>
 							<li class="news-item">
-								<p class="news-item-time"><time datetime="2016-06-27">2016-06-27</time></p>
-								<p class="news-item-text">Встречайте: белые медведи в холодных биомах!</p>
+								<div class="news-item-header">
+									<p class="news-item-time"><time datetime="2016-06-27">2016-06-27</time></p>
+									<p class="news-item-text">Встречайте: белые медведи в холодных биомах!</p>
+								</div>
 								<img class="news-item-img" src="img/news_screenshot-2.jpg" alt="Белые медведи в холодных биомах">
 							</li>
 							<li class="news-item">
-								<p class="news-item-time"><time datetime="2016-04-17">2016-04-17</time></p>
-								<p class="news-item-text">В мобильной версии теперь можно приручить кролика, он станет верным другом</p>
+								<div class="news-item-header">
+									<p class="news-item-time"><time datetime="2016-04-17">2016-04-17</time></p>
+									<p class="news-item-text">В мобильной версии теперь можно приручить кролика, он станет верным другом
+									</p>
+								</div>
 								<img class="news-item-img" src="img/news_screenshot-3.jpg" alt="Кролик">
 							</li>
 						</ul>
@@ -143,7 +148,7 @@
 	<footer class="footer">
 
 		<div class="footer__contacts">
-			<div class="container">
+			<div class="footer__items-flex container">
 				<p class="footer__contacts-text">Подключайся и играй на наших серверах!</p>
 				<div class="footer__contacts-items">
 					<p class="footer-contacts__item contacts-item">
@@ -158,17 +163,15 @@
 		</div>
 
 		<div class="footer__content">
-			<div class="container">
-				<ul class="footer__content-items">
-					<li class="footer__content-item"><a href="#"><img src="img/logo-1.jpg" alt=""></a></li>
-					<li class="footer__content-item"><a href="#"><img src="img/logo-2.jpg" alt=""></a></li>
-					<li class="footer__content-item"><a href="#"><img src="img/logo-3.jpg" alt=""></a></li>
-					<li class="footer__content-item"><a href="#"><img src="img/logo-4.jpg" alt=""></a></li>
-				</ul>
-			</div>
+			<ul class="footer__content-items footer__items-flex container">
+				<li class="footer__content-item"><a href="#"><img src="img/logo-4.jpg" alt=""></a></li>
+				<li class="footer__content-item"><a href="#"><img src="img/logo-3.jpg" alt=""></a></li>
+				<li class="footer__content-item"><a href="#"><img src="img/logo-2.jpg" alt=""></a></li>
+				<li class="footer__content-item"><a href="#"><img src="img/logo-1.jpg" alt=""></a></li>
+			</ul>
 		</div>
 
-		<div class="footer__copyright">
+		<div class="footer__copyright container">
 			(c) Poshtar Boba, 2016
 		</div>
 	</footer>
