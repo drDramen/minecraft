@@ -1,5 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 
 .container {
@@ -63,6 +64,20 @@ body {
 .sidebar {
 	flex-grow: 1;
 }
+
+.sidebar__list a {
+	font-size: 20px;
+	color: #000000;
+}
+
+.sidebar__sublist {
+	list-style: inside;
+}
+
+.sidebar__sublist a {
+	color: #ff0000;
+}
+
 
 .main__page {
 	flex-grow: 3;
