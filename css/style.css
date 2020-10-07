@@ -1,6 +1,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
+	
 }
 
 .container {
@@ -12,33 +13,53 @@ body {
 	background-color: #37a14c;
 }
 
-/*****************************Изменить***************************/
-
-.header__top-text,
-.header__top-icons {
-	display: inline-block;
+.top-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0 9px;
 }
 
 .header__top-icons {
-	float: right;
+	display: flex;
+	justify-content: space-between;
 }
 
-.header__top container::after {
-	content: "";
-	clear: both;
-	display: inline-block;
-	width: 100%;
+.header__top-icons a:not(:last-child) {
+	margin-right: 6px;
 }
-
-.header__top-text {
-	line-height: 45px;
-}
-
-/***************************************************************/
 
 .header__content-flex {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0 7px;
+}
+
+.header__content-logo {
+	padding-top: 6px;
+}
+
+.header__content-btn {
+	padding: 4px 18px 0;
+	align-self: flex-start;
+}
+.header__content-btn a {
+	display: block;
+	background: linear-gradient(to bottom, #ffd104, #fdba13);
+	height: 34px;
+	width: 136px;
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 #293225, 0 -1px 0 0 #e8e61e;
+}
+
+.header__content-btn a:not(:last-child) {
+	margin-bottom: 8px;
 }
 
 .header__menu {
