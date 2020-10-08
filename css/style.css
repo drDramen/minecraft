@@ -1,7 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	
 }
 
 .container {
@@ -38,6 +37,25 @@ body {
 
 .header__content-logo {
 	padding-top: 6px;
+}
+
+.header-contacts__item {
+	font-size: 16px;
+	color: #0f680e;
+}
+
+.contacts-item a {
+	display: block;
+	float: right;
+	font-size: 20px;
+	color: #0f680e;
+}
+
+.header-contacts__item::after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
 }
 
 .header__content-btn {
