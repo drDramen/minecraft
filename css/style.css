@@ -35,31 +35,52 @@ body {
 	padding: 8px 0 7px;
 }
 
+.header__content-contacts {
+	align-self: stretch;
+	padding: 0 10px 0 22px;
+}
+
 .header__content-logo {
 	padding-top: 6px;
 }
 
-.header-contacts__item {
-	font-size: 16px;
+.header-contacts__phones p a,
+.header-contacts__phones {
 	color: #0f680e;
 }
 
-.contacts-item a {
-	display: block;
-	float: right;
+.contacts-items p a {
 	font-size: 20px;
-	color: #0f680e;
 }
 
-.header-contacts__item::after {
-	content: "";
-	clear: both;
-	display: block;
-	height: 0;
+.contacts-items {
+	line-height: 1.4em;
+}
+
+.contacts-items-row3 {
+	padding-top: 4px;
+}
+
+.header-contacts__skype {
+	padding-top: 6px;
+}
+
+.contacts-items p span {
+	display: inline-block;
+	width: 87px;
+}
+.header-contacts__skype span {
+	display: inline-block;
+	background: url(../img/skype.png) no-repeat 90% center;
+	width: 87px;
+}
+
+.header-contacts__skype a {
+	font-style: italic;
 }
 
 .header__content-btn {
-	padding: 4px 18px 0;
+	padding: 4px 0px 0;
 	align-self: flex-start;
 }
 .header__content-btn a {
@@ -76,8 +97,19 @@ body {
 	box-shadow: 0 2px 0 0 #293225, 0 -1px 0 0 #e8e61e;
 }
 
+
+
+.header__content-btn a:hover {
+	transform: scale(1.01);
+	/*box-shadow: 0 0px 10px 0px #757575;*/
+}
+
 .header__content-btn a:not(:last-child) {
-	margin-bottom: 8px;
+	margin-bottom: 15px;
+}
+
+.header__content-logo2 {
+	padding-bottom: 10px;
 }
 
 .header__menu {
@@ -94,7 +126,7 @@ body {
 	text-align: center;
 	/*width: calc((100%-12px)/5);*/
 	flex-grow: 1;
-	flex-basis: 140px;
+	flex-basis: 190px;
 	cursor: pointer;
 	border-left: 1px solid #247634;
 	border-right: 1px solid #57e974;
@@ -106,7 +138,7 @@ body {
 
 .header__nav,
 .footer__content {
-	background: linear-gradient(to bottom, #45bb5c, #3d9b50);
+	background: linear-gradient(to bottom, #45bc5c, #3d9b50);
 }
 
 .news-item-header {
@@ -122,16 +154,22 @@ body {
 
 .body {
 	display: flex;
-	justify-content: space-between;
+	padding: 5px 0 20px;
 }
 
 .sidebar,
 .main__page {
-	flex-basis: 193px;
+	flex-basis: 190px;
 }
 .sidebar {
 	flex-grow: 1;
+	flex-shrink: 1;
 	padding-right: 18px;
+}
+
+.main__page {
+	flex-grow: 3;
+	flex-shrink: 1;
 }
 
 .sidebar__item {
@@ -145,10 +183,6 @@ body {
 	color: #000000;
 }
 
-.sidebar__sublist {
-	list-style: inside;
-}
-
 .sidebar__sublist a {
 	color: #ff0000;
 }
@@ -157,15 +191,11 @@ body {
 	display: none;
 	font-size: 16px;
 	line-height: 22px;
-	padding-left: 19px;
+	padding: 0px 0 5px 16px;
 }
 
 .sidebar__item:hover .sidebar__sublist {
 	display: block;
-}
-
-.main__page {
-	flex-grow: 3;
 }
 
 .about {
@@ -181,15 +211,11 @@ body {
 .about__text {
 	font-size: 14px;
 	line-height: 1.2;
-	padding: 19px 0 35px;
-	/*-moz-transform: matrix( 0.99263163406386,0,0,1,0,0);
-  -webkit-transform: matrix( 0.99263163406386,0,0,1,0,0);
-  -ms-transform: matrix( 0.99263163406386,0,0,1,0,0);
-*/
+	padding: 20px 0 35px;
 }
 
 .news {
-	padding: 25px 0 25px;
+	padding: 23px 0 11px;
 }
 .news__title {
 	padding-bottom: 20px;
@@ -198,12 +224,10 @@ body {
 
 .news__items {
 	display: flex;
-	justify-content: space-between;
 }
 
 .news-item {
 	flex-grow: 1;
-	height: 265px;
 }
 
 .news-item + .news-item {
@@ -220,24 +244,76 @@ body {
 
 .news-item-img {
 	border-top: 1px solid #247634;
+	/*width: 232px;
+	min-height: 174px;*/
 }
+
+/*padding-bottom: 75%;  задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+/*
+.news-item-img {
+	position: relative;
+	padding-bottom: 75%; 
+	height: 0;
+	overflow: hidden;
+}
+
+.news-item-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 0;
+	outline-width: 0;
+}*/
+
+
+
+.news-item:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0px 10px 0px #757575;
+}
+
 .news-item-time {
+	color: #000000;
 	font-weight: bold;
 	padding: 0 0 3px 0;
 }
 
 .footer__contacts {
 	background: linear-gradient(to bottom, #fec50d, #f0b006);
-}
-
-.footer__items-flex {
-	display: flex;
-	justify-content: space-between;
+	padding-top: px;
 }
 
 .footer__contacts-text {
+	font-size: 20px;
+	line-height: 1.5em;
 }
+
+.footer-contacts__phones p a {
+	color: #000000;
+}
+.footer-contacts__phones {
+	line-height: 1.5em;
+}
+
+.footer__items,
 .footer__content-items {
-	padding: 10px 0;
-	font-size: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0 9px;
+	flex-wrap: wrap;
 }
+
+.footer__copyright {
+	padding: 20px 0;
+	font-size: 14px;
+}
+
+
+/*
+.responsive {
+	max-width: 100%;;
+  height: auto;
+}
+*/
