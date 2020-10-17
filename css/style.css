@@ -24,6 +24,52 @@ body {
 	justify-content: space-between;
 }
 
+.header-contacts__skype a {
+	font-style: italic;
+}
+
+.header__content-btn a {
+	display: block;
+	width: 136px;
+	height: 34px;
+	padding: 5px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5em;
+	text-align: center;
+	background: linear-gradient(to bottom, #ffd104, #fdba13);
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 #293225, 0 -1px 0 0 #e8e61e;
+}
+
+.header__top-text,
+.header__menu a,
+.news-item-text,
+.footer__contacts-text {
+	color: #ffffff;
+}
+
+.sidebar__item > a {
+	color: #000000;
+}
+
+.sidebar__sublist a {
+	color: #ff0000;
+}
+
+.footer-contacts__phones p a {
+	color: #000000;
+}
+
+.header-contacts__phones p a,
+.header-contacts__phones {
+	color: #0f680e;
+}
+
+.contacts-items p a {
+	font-size: 20px;
+}
+
 .header__top-icons a:not(:last-child) {
 	margin-right: 6px;
 }
@@ -44,15 +90,6 @@ body {
 	padding-top: 6px;
 }
 
-.header-contacts__phones p a,
-.header-contacts__phones {
-	color: #0f680e;
-}
-
-.contacts-items p a {
-	font-size: 20px;
-}
-
 .contacts-items {
 	line-height: 1.4em;
 }
@@ -65,42 +102,25 @@ body {
 	padding-top: 6px;
 }
 
-.contacts-items p span {
-	display: inline-block;
-	width: 87px;
-}
 .header-contacts__skype span {
 	display: inline-block;
 	width: 87px;
 	background: url(../img/skype.png) no-repeat 90% center;
 }
 
-.header-contacts__skype a {
-	font-style: italic;
+.contacts-items p span {
+	display: inline-block;
+	width: 87px;
 }
 
 .header__content-btn {
 	align-self: flex-start;
 	padding: 4px 0px 0;
 }
-.header__content-btn a {
-	display: block;
-	width: 136px;
-	height: 34px;
-	padding: 5px;
-	color: #fff;
-	font-size: 16px;
-	line-height: 1.5em;
-	text-align: center;
-	background: linear-gradient(to bottom, #ffd104, #fdba13);
-	border-radius: 4px;
-	box-shadow: 0 2px 0 0 #293225, 0 -1px 0 0 #e8e61e;
-}
-
-
 
 .header__content-btn a:hover {
 	transform: scale(1.01);
+
 	/*box-shadow: 0 0px 10px 0px #757575;*/
 }
 
@@ -124,6 +144,7 @@ body {
 
 .header__menu-item {
 	flex-basis: 190px;
+
 	/*width: calc((100%-12px)/5);*/
 	flex-grow: 1;
 	text-align: center;
@@ -142,14 +163,12 @@ body {
 }
 
 .news-item-header {
+	height: 89px;
+	padding: 10px 6px;
+	font-size: 14px;
+	line-height: 1.2em;
 	background: linear-gradient(to top, #45bb5c, #309444);
-}
-
-.header__top-text,
-.header__menu a,
-.news-item-text,
-.footer__contacts-text {
-	color: #ffffff;
+	border-bottom: 1px solid #57e974;
 }
 
 .body {
@@ -177,14 +196,6 @@ body {
 	line-height: 53px;
 	border-bottom: 1px solid #e7e7e7;
 	cursor: pointer;
-}
-
-.sidebar__item > a {
-	color: #000000;
-}
-
-.sidebar__sublist a {
-	color: #ff0000;
 }
 
 .sidebar__sublist {
@@ -234,40 +245,32 @@ body {
 	margin-left: 20px;
 }
 
-.news-item-header {
-	height: 89px;
-	padding: 10px 6px;
-	font-size: 14px;
-	line-height: 1.2em;
-	border-bottom: 1px solid #57e974;
-}
-
 .news-item-img {
 	border-top: 1px solid #247634;
+
 	/*width: 232px;
-	min-height: 174px;*/
+  min-height: 174px;*/
 }
 
 /*padding-bottom: 75%;  задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+
 /*
 .news-item-img {
-	position: relative;
-	padding-bottom: 75%; 
-	height: 0;
-	overflow: hidden;
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
 }
 
 .news-item-img img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-width: 0;
-	outline-width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
 }*/
-
-
 
 .news-item:hover {
 	box-shadow: 0 0px 10px 0px #757575;
@@ -290,9 +293,6 @@ body {
 	line-height: 1.5em;
 }
 
-.footer-contacts__phones p a {
-	color: #000000;
-}
 .footer-contacts__phones {
 	line-height: 1.5em;
 }
@@ -310,10 +310,9 @@ body {
 	font-size: 14px;
 }
 
-
 /*
 .responsive {
-	max-width: 100%;;
+  max-width: 100%;;
   height: auto;
 }
 */
