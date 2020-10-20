@@ -24,6 +24,26 @@ body {
 	justify-content: space-between;
 }
 
+.header__top-icons a {
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-indent: -9000px;
+	background: url(../img/minecraft_sprite.png) no-repeat;
+}
+
+.header__top-icons a.vk {
+	background-position: -60px 0;
+}
+
+.header__top-icons a.fb {
+	background-position: -30px 0;
+}
+
+.header__top-icons a.en {
+	background-position: 0 0;
+}
+
 .header-contacts__skype a {
 	font-style: italic;
 }
