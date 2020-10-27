@@ -1,6 +1,7 @@
 body {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
 }
 
 .clear-fix:after {
@@ -63,10 +64,10 @@ body {
 	color: #ff0000;
 }
 
-.header__content-contacts a,
+.header-contacts__skype a,
 .contacts-items a {
 	float: right;
-	width: 180px;
+	width: 178px;
 }
 
 .footer-contacts__phones p a {
@@ -89,31 +90,34 @@ body {
 .header__content-flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding: 8px 0 7px;
 }
 
-.header__content-contacts,
+.header__content-contacts {
+	align-self: stretch;
+	margin-left: 37px;
+}
+
 .contacts-items {
-	width: 270px;
+	width: 265px;
+	line-height: 25px;
 }
 
 .header__content-logo {
+	margin-left: 0;
 	padding-top: 6px;
-}
-
-.contacts-items {
-	line-height: 1.4;
 }
 
 .header-contacts__skype {
-	padding-top: 6px;
+	padding-top: 7px;
 	background: url(../img/skype.png) no-repeat 90% center;
 }
 
 .header__content-btn {
 	align-self: flex-start;
-	padding: 4px 0px 0;
+	margin-left: 25px;
+	padding: 4px 0 0;
 }
 
 .header__content-btn a:hover {
@@ -127,6 +131,7 @@ body {
 }
 
 .header__content-logo2 {
+	margin-left: auto;
 	padding-bottom: 10px;
 }
 
@@ -198,6 +203,7 @@ body {
 
 .sidebar__sublist {
 	display: none;
+	display: block;
 	padding: 0px 0 5px 16px;
 	font-size: 16px;
 	line-height: 22px;
@@ -271,7 +277,7 @@ body {
 }
 
 .footer-contacts__phones {
-	line-height: 1.5;
+	line-height: 1.5em;
 }
 
 .footer__items,
@@ -285,4 +291,13 @@ body {
 .footer__copyright {
 	padding: 20px 0;
 	font-size: 14px;
+}
+
+@media screen and (max-device-width: 980px) {
+	.header__content-logo2 {
+		display: none;
+	}
+	.header__content-flex {
+		justify-content: space-between;
+
 }
